@@ -1,17 +1,62 @@
-<h1>Login</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./admin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> Login </title>
+</head>
+<body>
 
-<% if (messages.error) { %>
-    <%= messages.error %>
-  <% } %>
-<form action="/login" method="POST">
-  <div>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <div>
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
-  </div>
-  <button type="submit">Login</button>
-</form>
-<a href="/register">Register</a>
+    <div class="mobile">
+     <div class="head sticky-top">
+        <div class=img>
+        </div>
+       </div>
+
+       <div class="container">
+      
+              <div class="title">
+                <form action="/login" method="POST">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label ">Email Id</label>
+                     <div class="ico">
+                        <img src="gifs/name.gif"/>
+                      <input type="email" class="form-control" id="email"  name="email" >
+                     </div>
+             
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <div class="ico">
+                        <img src="gifs/pass.gif"/>   
+                    <input type="password" class="form-control admin" id="password" name="password"> 
+                     
+                </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" value="Login" id="submit" >Login</button>
+                  </form>
+                  
+              </div>
+          </div>
+       </div>
+
+    
+
+
+    </div>
+
+<div class="desk">
+    <h1>
+    Please Open In Mobile View  <br>
+   
+    </h1>
+</div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
